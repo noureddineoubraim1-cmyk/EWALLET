@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Wallet | Connexion</title>
+  <link rel="stylesheet" href="/src/css/styles.css">
+ </head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <a href="/index.html" class="logo">
+        <img src="/assets/e-wallet-logo.avif" alt="Logo E-Wallet">
+      </a>
+      <ul class="nav-links">
+        <li><a href="/src/view/index.html">Accueil</a></li>
+        <li><a href="#">À propos</a></li>
+        <li><a href="#">Fonctionnalités</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Main -->
+  <main>
+    <section class="hero">
+      <!-- Login content -->
+      <div class="hero-content">
+        <h1>Connexion</h1>
+        <p>
+          Accédez à votre E-Wallet en toute sécurité et gérez vos transactions en toute confiance.
+        </p>
+        <div id="error"> </div>
+        <form class="login-form">
+          <div class="input-group">
+            <input id="mail"
+              type="email"
+              placeholder="Adresse e-mail"
+              required
+            >
+          </div>
+          <div class="input-group">
+            <input id="password"
+              type="password"
+              placeholder="Mot de passe"
+              required
+            >
+            <span id ="display" class="toggle-password" >👁</span>
+          </div>
+          <p id="result"></p>
+          <button  id="submitbtn" type="button" class=" btn btn-primary">
+            Se connecter
+          </button>
+        </form>
+        <p style="margin-top: 15px; font-size: 0.9rem;">
+          Vous n’avez pas encore de compte ?
+          <a href="#" style="color:#3b66f6; font-weight:600;">
+            S’inscrire
+          </a>
+        </p>
+      </div>
+      <!-- Image -->
+      <div class="hero-image">
+        <img src="/assets/e-Wallet6.gif" alt="Illustration de connexion">
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 E-Wallet. Tous droits réservés.</p>
+  </footer>
+ <script type ="module" src="/src/controllers/login.js"></script>
+</body>
+</html>
